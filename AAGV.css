@@ -1,0 +1,460 @@
+/* Part 1: Navbar */
+
+/* General style rule set for all items in ul */
+nav {
+  text-align: center; /* Center the content horizontally */
+}
+.navbar ul {
+    list-style-type: none;
+      overflow: hidden;
+  position: static;
+  margin-bottom: 0;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Style rule set for individual li */
+.navbar ul li {
+  float: center;
+    margin: 20px;
+  display: inline; 
+  
+  
+  
+}
+
+
+/* Style rule set for individual li link */
+.navbar ul li a {
+  display: inline-block;
+  content: 5px;
+  font-family: courier;
+    color:navy;
+    font-size: 25px; 
+  font-weight:bold;
+  text-decoration: none; 
+  justify-content: center;
+
+    
+  
+
+}
+
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+  background-color: red;
+}
+
+
+
+
+/* Part 2: Flexbox */
+
+/* General style rule set for flex container */
+#header-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 30px;
+}
+
+
+/* Style rules for flex-item 1 */
+.header-container:nth-of-type(1) {
+    color: yellowgreen
+}
+
+/* Style rules for flex-item 2 */
+.header-item:nth-of-type(2) {
+
+}
+
+/* Style rules for flex-item 3 */
+.header-item:nth-of-type(3) {
+
+}
+
+
+/* Style set for all flex-items */
+.flex-item {
+    background: white;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white; 
+
+
+}
+
+html {
+  body {
+      font-family: Arial, sans-serif;
+    justify-content: center; /* Center the parent container horizontally */
+    align-items: center; /* Center the parent container vertically */
+  }
+  h1 {
+      font-family: Arial, Helvetica, sans-serif, serif;
+  }
+  
+  #theme-button {
+  background-color: #250084; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  float: right;
+  margin-right: 3%;
+  
+  
+  
+  
+  
+  }
+
+
+
+  
+.title {
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: navy;
+  font-size: 75px;
+  border: 2px solid #ff0000;
+  background-color: #ff0000;
+}
+.subtitle {
+  text-align: center;
+  margin-top: -40px;
+  color: navy; 
+  font-size: 35px;
+  
+  
+}
+  
+  .MissionStatement
+   { line-height: 2;
+    height: 30%;
+    font-weight: bold;
+    width: 75%;
+    margin-left: 185px;
+    text-align: center;
+    font-size: 30px;
+    font-family: courier; 
+    color: navy;
+   }
+
+
+.protest { 
+  display: flex;
+  left: 75;
+  width: 650px;
+  height: auto;
+  margin: 0 auto;
+  color: navy;
+  margin-left: 25%;
+  
+  
+
+}
+
+.button {display: flex;
+align-items: center;
+justify-content: center;}
+
+.America {
+  text-align: center;
+  font-size: 250%;
+  color: navy;
+  font-family: geneva;
+}
+.violence {
+  display: flex;
+  margin-left: 12%;
+  text-align: center;
+  width: 75%;
+  height: 15%;
+  font-size: 20px;
+  font-family: courier;
+  color: navy; 
+  font-weight: bold;
+  line-height: 2;
+}
+  .year {
+    display: flex;
+    text-align: center;
+    margin-left: 18%;
+    
+
+  }
+
+  #stats { 
+   display: flex;
+    text-align: center;
+    color: navy; 
+    font-size: 250%;
+    margin-left: 35%; 
+    font-family: geneva;
+    
+  }
+  .stat1-text-container {
+    display: block;
+    width: 60%;
+    height: auto; 
+    flex-direction: column;
+    align-content: center;
+    gap: 5px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+    margin-left: 17%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+    background:lightgrey;
+
+    
+    
+  }
+  .stat1-image-wrapper img {
+    width: auto; /* Adjust the width as needed */
+      height: 100%; /* Maintain aspect ratio */
+    margin-left: 30%;
+    text-align: center;
+
+  }
+
+  .stat1-text-wrapper {
+    margin-left: 10%;
+    width: auto;
+    height: .5%;
+    text-align: left;
+    font-family: courier;
+    font-size: 15px;
+    line-height: 2;
+    font-weight: bold;
+
+  }
+  
+  .stat2-text-container {
+    display: block;
+    width: 60%;
+    height: auto; 
+    flex-direction: column;
+    align-content: center;
+    gap: 5px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+    margin-left: 17%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+    background:lightgrey;
+    
+  }
+  .stat2-image-wrapper img {
+      width: 65%; /* Adjust the width as needed */
+      height: auto; /* Maintain aspect ratio */
+    margin-left: 22%;
+    text-align: center;
+    
+    
+  }
+  .stat2-text-wrapper{
+
+    margin-left: 5%;
+    width: auto;
+    height: .5%;
+    text-align: left;
+    font-family: courier; 
+  }
+  
+  .stat3-text-container {
+    display: block;
+    width: 60%;
+    height: auto; 
+    flex-direction: column;
+    align-content: center;
+    gap: 5px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+    margin-left: 17%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+    background:lightgrey;
+    
+  }
+  .stat3-image-wrapper{
+    margin-left: 30%;
+    text-align: center;
+  }
+.stat3-text-wrapper{
+  margin-left: 30%;
+  text-align: left;
+}
+  
+#impact {
+  margin-left: 35%;
+  font-size: 250%;
+  color: navy; 
+  font-family: geneva; 
+}
+
+
+#children { 
+  display: flex;
+  margin-left: 12%;
+  text-align: center;
+  width: 75%;
+  height: 15%;
+  font-size: 20px;
+  font-family: courier;
+  color: navy; 
+  font-weight: bold;
+  line-height: 2;
+}
+
+  
+   .petition{
+    margin: 0;
+     padding-left: 200px;
+   padding-right: 200px ;
+   }   
+
+  .petition-container{
+    display: flex; 
+    flex-direction: column;
+    align-content: center;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    background:lightgrey;
+
+  }
+
+
+    .petition-para{
+      width: 85%;
+      padding-right: 10px;
+      font-family: roboto;
+      font-weight: bold;
+      justify-content: space-evenly;
+      line-height: 1.5;
+      align-content: center;
+      padding-left: 10%;
+      
+    }
+    .signatures {
+      width: 45%;
+      padding-right: 10px;
+      
+    }
+  #sign-petition {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  
+  .error {
+    border-style: solid;
+    border-width: 10px;
+    border-color: red;
+    background:pink;
+  }
+
+  .modal {
+    display: none; /* hides the modal from view by default*/
+    position: fixed; /* keeps the modal in one place */
+    z-index: 2; /* positions the modal on top of all other elements on the screen */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+    flex-direction: column; /* these flexbox rules center the content on the screen */
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* box that contains all the content and images */
+  .modal-content {
+    background-color: lightsteelblue; /* update the colors and font sizes as you like */
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    display: flex; /* adds flexbox to center all items */
+    justify-content: center;
+    align-items: center;
+  }
+
+  #thanks-modal-content {
+    width: 20rem; /* sets a default width for the text container */
+  }
+
+  #modal-text-container {
+    display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #model-image-container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .revealable {
+      opacity: 0;
+      transition: opacity 0.5s ease;
+  }
+
+  .revealable.active {
+      opacity: 1;
+      transform: translateY(-20px); /* Adjust the value as needed */
+  }
+  
+  footer {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+  }
+
+  #footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  footer p {
+    margin: 10px 0;
+    color: #333;
+  }
+
+  footer address {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+  }
+
+  footer a {
+    color: #250084;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
